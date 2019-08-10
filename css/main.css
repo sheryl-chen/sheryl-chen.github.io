@@ -1,0 +1,228 @@
+body {
+    background-color: #1a1a1a;
+    margin: 0;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    color: whitesmoke;
+    height: 100%
+}
+
+/*BACKGROUND*/
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*HEADER*/
+header {
+    background-color: mediumaquamarine;
+    height: 50px;
+    min-width: 600px;
+}
+
+#navlogo {
+    height: 40px;
+    float: left;
+    margin-left: 20px;
+    padding-top: 5px;
+}
+
+.topnav {
+    float: right;
+    font-size: 20px;
+    min-width: 500px;
+}
+
+nav ul {
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 10px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.topnav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: whitesmoke;
+    position: absolute;
+    transition: all ease-in-out 200ms;
+}
+
+.topnav a:hover::after {
+    width: 100%;
+}
+
+
+/*FOOTER*/
+footer {
+    background-color: black;
+    width: 100%;
+    height: 120px;
+    color: #737373;
+
+}
+
+footer a {
+    color: #737373;
+}
+
+.bottomnav {
+    text-align: center;
+    font-size: 15px; 
+}
+
+.bottomnav a:hover {
+    color: mediumaquamarine;
+}
+
+#footerlogo {
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 13px 0px 0px 0px;
+}
+
+
+/*TEXT*/
+h1, h2, h3, h4 {
+    text-align: center;
+    font-weight: 300;
+}
+
+b {
+    color:mediumaquamarine;
+}
+
+
+/*BUTTONS*/
+.button {
+    border: 2px solid whitesmoke;
+    height: 40px;
+    width: 130px;
+    display: block;
+    margin: 30px auto 30px auto;
+    
+    
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 12px;
+    
+    -webkit-transition-duration: 0.25s; /* Safari */
+    transition-duration: 0.25s;
+}
+
+.button:hover {
+    border: 2px solid mediumaquamarine;
+    background-color: mediumaquamarine;
+}
+
+.button:active {
+    border: 2px solid mediumaquamarine;
+    background-color: #1a1a1a;
+}
+
+
+/*ABOUT*/
+#plainlink {
+    text-decoration: none;
+    color: mediumaquamarine;
+    font-weight: 400;
+}
+
+#plainlink:hover {
+    color: whitesmoke;
+}
+
+
+/*RESUME*/
+.hoverbg:hover {
+    background-color: #333333;
+    
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+
+.hoverbg {
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+}
+
+.flip-box {
+    display: inline-block;
+    width: 40vw;
+    height: 40vw;
+    max-width: 300px;
+    max-height: 300px;
+    perspective: 1000px;
+    margin: 20px 10px 0px 10px;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.flip-box-front {
+    background-size: contain; 
+}
+
+.flip-box-back {
+    background-color: #1a1a1a;
+    transform: rotateY(180deg);
+    overflow: scroll;
+}
+
+.tooltip {
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltiptext {
+    position: relative;
+    visibility: collapse;
+    
+    background-color: whitesmoke;
+    padding: 3px;
+    border: 2px solid mediumaquamarine;
+    color: #1a1a1a;
+    font-size: 12px;
+}
+
+
